@@ -1,4 +1,7 @@
-# geo
+# geo Korlin version
+
+Forked from [@rolfrander](https://github.com/rolfrander/geo)
+
 Code for representing and converting between geographical coordinate systems, taken from
 [Stack overflow](https://stackoverflow.com/questions/176137/java-convert-lat-lon-to-utm).
 
