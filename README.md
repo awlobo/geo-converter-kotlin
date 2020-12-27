@@ -13,14 +13,12 @@ and [WGS84-coordinates](https://en.wikipedia.org/wiki/World_Geodetic_System).
 Example usage:
 
 ```
-WGS84 wgs_a = new WGS84(56,-5);
-UTM utm_a = new UTM(31, 'V', 375273.85, 6207884.59);
-WGS84 wgs_b = new WGS84(utm_a);
-UTM utm_b = new UTM(wgs_a);
-```
+val utm_a = UTM(31, 'V', 375273.85, 6207884.59)
+val wgs_a = WGS84(utm_a)
 
-More explanations of the math can be found 
-[here](http://www.uwgb.edu/dutchs/UsefulData/UTMFormulas.htm).
+val wgs_b = WGS84(56,-5)
+val utm_b = UTM(wgs_a)
+```
 
 # BUGS
 There is no error-handling...
