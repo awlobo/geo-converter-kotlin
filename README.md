@@ -10,11 +10,12 @@ and [WGS84-coordinates](https://en.wikipedia.org/wiki/World_Geodetic_System).
 Example usage:
 
 ```
-val utm_a = UTM(31, 'V', 375273.85, 6207884.59)
-val wgs_a = WGS84(utm_a)
+//  zone, letter, x coordinate, y coordinate
+val utm_to_wgs = WGS84( UTM(31, 'V', 375273.85, 6207884.59) )
 
-val wgs_b = WGS84(56,-5)
-val utm_b = UTM(wgs_a)
+// latitude, longitude
+val wgs_to_utm = UTM( WGS84(56,-5) )
+
 ```
 
 # BUGS
