@@ -1,4 +1,4 @@
-package org.pvv.rolfn.geo
+package com.awlobo.geo
 
 import org.junit.Assert
 import org.junit.Test
